@@ -1,0 +1,186 @@
+    html {
+  scroll-behavior: smooth;
+}
+        #header{
+            width: 100%;
+        }
+        * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+        body{
+            margin: 0px;
+            padding: 0px;
+            overflow-x: hidden;
+        }
+        #t1{
+            height: 60px;
+            background:#117;
+        }
+        #t2{
+            height:85vh;
+            background: #fff;
+        }
+        #head-inner{
+            width: 100%;
+            padding: 0px 15% 0px 15%;
+            display: flex;
+            justify-content: space-between;
+            background: #fff;
+        }
+        .sticky {
+          position: fixed;
+          top: 0;
+          width: 100%;
+          z-index: 1000;
+          box-shadow: 1px 2px 3px #ccc;
+        }
+
+        .sticky + .content {
+          padding-top: 102px;
+        }
+        .inline ul{
+            margin-top: 50px;
+        }
+        .inline ul a li{
+          list-style: none; 
+        }
+        .inline ul a,.inline ul span{
+            text-decoration: none;
+            display: inline-flex;
+            font-family: Meslo-LG-M-DZ-Regular;
+            font-weight: bold;
+            color:#66b;
+            font-size: 1.2em;
+            margin: 5px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+
+        .inline ul>a:hover{
+            color:#228 !important;
+        }
+        .b-right{
+            border-right: 2px solid #66b;;
+        }
+
+
+
+/* Header styles */
+
+
+
+
+#ani #span.animated {
+  position: absolute;
+  margin: auto;
+  right: 0;
+  left: 0;
+  bottom: 50px;
+  height: 4px;
+  width: 4px;
+  border-radius: 2px;
+  background: #226;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+#ani #span::before,
+#ani #span::after {
+  position: absolute;
+  top: -23px;
+  content: "";
+  height: 30px;
+  width: 30px;
+  border-radius: 2px;
+  background: #172;
+}
+
+#ani #span::before {
+  left: -10px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform:    rotate(-45deg);
+  -ms-transform:     rotate(-45deg);
+  -o-transform:      rotate(-45deg);
+  transform:         rotate(-45deg);
+}
+
+#ani #span::after {
+  right: -10px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform:    rotate(45deg);
+  -ms-transform:     rotate(45deg);
+  -o-transform:      rotate(45deg);
+  transform:         rotate(45deg);
+}
+#ani >h1{
+    margin: 0px !important;
+    padding: 0px;
+}
+.textColor{
+     background: -webkit-linear-gradient(#172, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 4em !important;
+    margin: 1px;
+    font-family: Meslo-LG-M-DZ-Regular;
+}
+
+@font-face {
+    font-family: 'Antigoni-Med';
+    src:url('fontfamily/Antigoni-Med.ttf.woff') format('woff'),
+        url('fontfamily/Antigoni-Med.ttf.svg#Antigoni-Med') format('svg'),
+        url('fontfamily/Antigoni-Med.ttf.eot'),
+        url('fontfamily/Antigoni-Med.ttf.eot?#iefix') format('embedded-opentype'); 
+        font-weight: normal;
+        font-style: normal;
+        font-family: 'Antigoni-Light';
+    src:url('fontfamily/Antigoni-Light.ttf.woff') format('woff'),
+        url('fontfamily/Antigoni-Light.ttf.svg#Antigoni-Light') format('svg'),
+        url('fontfamily/Antigoni-Light.ttf.eot'),
+        url('fontfamily/Antigoni-Light.ttf.eot?#iefix') format('embedded-opentype'); 
+        font-weight: normal;
+        font-style: normal;
+          font-family: 'Meslo-LG-M-DZ-Regular';
+    src:url('fontfamily/Meslo-LG-M-DZ-Regular.ttf.woff') format('woff'),
+        url('fontfamily/Meslo-LG-M-DZ-Regular.ttf.svg#Meslo-LG-M-DZ-Regular') format('svg'),
+        url('fontfamily/Meslo-LG-M-DZ-Regular.ttf.eot'),
+        url('fontfamily/Meslo-LG-M-DZ-Regular.ttf.eot?#iefix') format('embedded-opentype'); 
+        font-weight: normal;
+        font-style: normal;
+}
+.dinline{
+    display: inline;
+    margin: 20px;
+    font-size: 1.2em;
+    cursor: pointer;    
+}
+.pfolio{
+    padding: 20px;
+    box-shadow: 1px 2px 2px #bbb;
+    height: 130px;
+    width: 250px;
+    float: left;
+    margin: 5px;
+    }
+.pfolio-cover{
+    width: 65% ;
+    margin: auto;
+}
+#footer{
+    padding: 20px 50px 20px 50px;
+    width: 100%;
+    background: #113;
+    color:white; 
+    font-family: Antigoni-Light;
+}
+.list-unstyled li{
+    display: inline;
+    margin: 4px;
+}
+.list-unstyled li a{
+    text-decoration: none;
+    color:white;
+}
