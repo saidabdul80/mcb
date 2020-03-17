@@ -15,12 +15,15 @@
             overflow-x: hidden;
         }
         #t1{
-            height: 60px;
-            background:#117;
+            height: 30px;
+            background:#115;
+
         }
         #t2{
             height:85vh;
             background: #fff;
+            background-image: url('../images/edit/h1.jpg');
+            background-size: cover;
         }
         #head-inner{
             width: 100%;
@@ -95,7 +98,7 @@
   height: 30px;
   width: 30px;
   border-radius: 2px;
-  background: #172;
+  background: #fff;
 }
 
 #ani #span::before {
@@ -120,34 +123,38 @@
     padding: 0px;
 }
 .textColor{
+  /*
      background: -webkit-linear-gradient(#172, #333);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    */
+    color:white;
     font-size: 4em !important;
     margin: 1px;
     font-family: Meslo-LG-M-DZ-Regular;
 }
 
+
 @font-face {
     font-family: 'Antigoni-Med';
-    src:url('fontfamily/Antigoni-Med.ttf.woff') format('woff'),
-        url('fontfamily/Antigoni-Med.ttf.svg#Antigoni-Med') format('svg'),
-        url('fontfamily/Antigoni-Med.ttf.eot'),
-        url('fontfamily/Antigoni-Med.ttf.eot?#iefix') format('embedded-opentype'); 
+    src:url('../fontfamily/Antigoni-Med.ttf.woff') format('woff'),
+        url('../fontfamily/Antigoni-Med.ttf.svg#Antigoni-Med') format('svg'),
+        url('../fontfamily/Antigoni-Med.ttf.eot'),
+        url('../fontfamily/Antigoni-Med.ttf.eot?#iefix') format('embedded-opentype'); 
         font-weight: normal;
         font-style: normal;
         font-family: 'Antigoni-Light';
-    src:url('fontfamily/Antigoni-Light.ttf.woff') format('woff'),
-        url('fontfamily/Antigoni-Light.ttf.svg#Antigoni-Light') format('svg'),
-        url('fontfamily/Antigoni-Light.ttf.eot'),
-        url('fontfamily/Antigoni-Light.ttf.eot?#iefix') format('embedded-opentype'); 
+    src:url('../fontfamily/Antigoni-Light.ttf.woff') format('woff'),
+        url('../fontfamily/Antigoni-Light.ttf.svg#Antigoni-Light') format('svg'),
+        url('../fontfamily/Antigoni-Light.ttf.eot'),
+        url('../fontfamily/Antigoni-Light.ttf.eot?#iefix') format('embedded-opentype'); 
         font-weight: normal;
         font-style: normal;
           font-family: 'Meslo-LG-M-DZ-Regular';
-    src:url('fontfamily/Meslo-LG-M-DZ-Regular.ttf.woff') format('woff'),
-        url('fontfamily/Meslo-LG-M-DZ-Regular.ttf.svg#Meslo-LG-M-DZ-Regular') format('svg'),
-        url('fontfamily/Meslo-LG-M-DZ-Regular.ttf.eot'),
-        url('fontfamily/Meslo-LG-M-DZ-Regular.ttf.eot?#iefix') format('embedded-opentype'); 
+    src:url('../fontfamily/Meslo-LG-M-DZ-Regular.ttf.woff') format('woff'),
+        url('../fontfamily/Meslo-LG-M-DZ-Regular.ttf.svg#Meslo-LG-M-DZ-Regular') format('svg'),
+        url('../fontfamily/Meslo-LG-M-DZ-Regular.ttf.eot'),
+        url('../fontfamily/Meslo-LG-M-DZ-Regular.ttf.eot?#iefix') format('embedded-opentype'); 
         font-weight: normal;
         font-style: normal;
 }
@@ -162,12 +169,11 @@
     box-shadow: 1px 2px 2px #bbb;
     height: 130px;
     width: 250px;
-    float: left;
+    display: inline-block;
     margin: 5px;
     }
 .pfolio-cover{
-    width: 65% ;
-    margin: auto;
+    width: 65%;
 }
 #footer{
     padding: 20px 50px 20px 50px;
@@ -184,3 +190,39 @@
     text-decoration: none;
     color:white;
 }
+  @media(max-width: 786px){
+    .inline{
+      margin-bottom: 5px !important;
+    }
+    @media(max-width: 593px){
+      .textColor{
+        font-size: 2.5em !important;
+      }
+      #logo{
+        width: 140px !important;
+        height: 110px;
+        margin-top: 40px;
+      }
+      .inline ul{
+          margin-top: 16px !important;
+
+        }
+        #logo{
+          margin-top: 0px !important;
+        }
+         #head-inner{
+          padding: 4px 15px !important;
+        }
+      @media(max-width: 430px){
+        #head-inner{
+          padding: 5px !important;
+        }
+        .inline ul{
+          margin-top: 16px !important;
+        }
+        .inline ul >a >li{
+          font-size: 0.6em !important;
+        }
+      }
+    }
+  }
