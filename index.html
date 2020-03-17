@@ -1,0 +1,133 @@
+<!--
+Author: SA'ID ABDULSALAM
+MATRIC NO.: U16/FNS/CSC/1052
+Author URL: github.com/abdullahikawu/
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>mcb ibbul</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/animated.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<style type="text/css">
+		</style>
+
+
+</head>
+<body>
+
+	<!--header section-->
+	<div id="header">
+		<div id="t1"></div>
+		<div id="t2">
+			<div id="head-inner">
+				<img src="images/mcb.png" width="140px">
+				<div class="inline">
+					<ul>
+						<a href="">
+							<li>Home</li><span class="b-right"></span>						
+						</a>
+						<a href="">
+							<li>Staff</li><span class="b-right"></span>
+						</a>
+						<a href="">
+							<li>Project</li><span class="b-right"></span>
+						</a>
+						<a href="">
+							<li>Contact</li>
+						</a>
+					</ul>
+				</div>
+			</div>
+			<center>
+				<div style="margin-top: 20vh;" id="ani">
+					<h1 class="animated bounceInDown textColor">WELCOME TO MICRO BIOLOGY</h1>
+					<p class="animated bounceInDown" style="font-size: 1.3em !important;color:#a11;"> Naviage through our site to get more</p>
+						<a id="span" class="animated bounce" href="#content" style="cursor: pointer;"></a>
+				</div>
+			</center>
+		</div>
+	</div>
+	<!--End header section-->
+
+	<!--content section-->
+	<div id="content">
+		<div id="section1" style="padding: 100px; background: #999; margin-bottom: 30px;">
+			<center>
+				<p style="color: #eee; font-size: 2em;">IMAGES</p>
+			</center>
+		</div>
+		<div id="section2">
+			<div>
+				<center>
+					<p class="dinline">News</p><p class="dinline">Calender</p>
+				</center>
+			</div>
+			<div class="pfolio-cover">
+				<!--Portfolio-->
+				<div class="pfolio">
+					<h3>Heading...</h3>
+					<p>ipsum dolor sit amet, consectetur adipisicing elit, sed do..</p>
+					<a href="">Read more</a>
+				</div>
+				<div class="pfolio">
+					<h3>Heading...</h3>
+					<p>ipsum dolor sit amet, consectetur adipisicing elit, sed do..</p>
+					<a href="">Read more</a>
+				</div>
+				<div class="pfolio">
+					<h3>Heading...</h3>
+					<p>ipsum dolor sit amet, consectetur adipisicing elit, sed do..</p>
+					<a href="">Read more</a>
+				</div>
+				<div class="pfolio">
+					<h3>Heading...</h3>
+					<p>ipsum dolor sit amet, consectetur adipisicing elit, sed do..</p>
+					<a href="">Read more</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--End content section-->
+	<br style="clear: left;"><br><br>
+	<!--Footer section-->
+	<footer id="footer">
+					<p class="col-lg-8 copy-right-grids" style="color:white !important;">© 2020 Conference. All Rights Reserved | Design by
+						<a href="https://cs.ibbu.edu.ng" target="_blank" style="color: #fff">Computer Science Department - IBBUL</a>
+					</p>
+						<ul class="list-unstyled">
+							<li>
+								<a href="#">Facebook</a>
+							</li>
+							<li class="mx-4">
+								<a href="#">Twitter</a>
+							</li>
+							<li>
+								<a href="#">Google Plus</a>
+							</li>
+						</ul>
+
+	</footer>
+	<!--End Footer section-->
+
+	<script>
+
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("head-inner");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+    document.getElementById('ani').style.marginTop = '25vh';
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+</html>
