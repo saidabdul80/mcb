@@ -12,6 +12,8 @@ Author URL: github.com/abdullahikawu/
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/animated.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/fa/css/font-awesome.min.css">
+	
 	<link rel="icon" type="image/ico" href="images/hnet.com-image.ico" />
 	<style type="text/css">
 
@@ -28,26 +30,46 @@ Author URL: github.com/abdullahikawu/
 				<img src="images/mcb.PNG" id="logo" alt="logo" width="140px">
 				<div class="inline">
 					<ul>
-						<a href="">
-							<li>Home</li><span class="b-right"></span>						
+						<a href="index.html">
+							<li class="active">Home</li>						
 						</a>
-						<a href="">
-							<li>Staff</li><span class="b-right"></span>
+						<a href="#" id="dropdownbtn">Pages  <i class="fa fa-caret-down"></i>
+							<div style="" id="dropdown">
+								<a href="academic-program.html">
+									<li>Academic Programs</li>
+								</a>
+								<a href="staff.html">
+									<li>Staff</li>
+								</a>
+								<a href="hod.html">
+									<li>H.O.D</li>
+								</a>
+								<a href="exams.html">
+									<li>Exam Officer</li>
+								</a>
+								<a href="project.html">
+									<li>Project</li>
+								</a>
+								<a href="team.html">
+									<li>Team</li>
+								</a>
+								<a href="mission-vission.html">
+									<li>Mission & vission</li>
+								</a>
+							</div>
 						</a>
-						<a href="">
-							<li>Project</li><span class="b-right"></span>
+						<a href="about.html">
+							<li>About Us</li>
 						</a>
-						<a href="">
-							<li>About Us</li><span class="b-right"></span>
-						</a>
-						<a href="">
+						<a href="contact.html">
 							<li>Contact</li>
 						</a>
 					</ul>
 				</div>
 			</div>
 			<center>
-				<div style="margin-top: 20vh;" id="ani">
+				<div style="margin-top: 100px;" id="ani">
+					<div style="width: 100%;" id="box"></div>
 					<h1 class="animated bounceInDown textColor" style="  text-shadow: 2px 2px 3px #777 !important;">WELCOME TO MICRO BIOLOGY</h1>
 					<p class="animated bounceInDown" style="font-size: 1.3em !important;color:#a11;"> Naviage through our site to get more</p>
 						<a id="span" class="animated bounce" href="#content" style="cursor: pointer;"></a>
@@ -130,10 +152,24 @@ var sticky = header.offsetTop;
 function myFunction() {
   if (window.pageYOffset > sticky) {
     header.classList.add("sticky");
-    document.getElementById('ani').style.marginTop = '25vh';
+    var hight = header.offsetHeight;
+    //alert(hight);
+    document.getElementById('box').style.height = hight+'px';
   } else {
+    document.getElementById('box').style.height = '0px';
     header.classList.remove("sticky");
   }
+}
+x = document.getElementById('dropdownbtn');
+y = document.getElementById('dropdown');
+x.onclick = function(){
+	y.style.display = 'block';
+}
+y.onmouseover = function(){
+	y.style.display = 'block';
+}
+y.onmouseout  = function(){
+	y.style.display = 'none';
 }
 </script>
 </body>
