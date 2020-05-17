@@ -1,0 +1,124 @@
+<!--
+Author: USMAN DABBAN
+MATRIC NO.: U16/FNS/CSC/10
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>mcb ibbul</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/animated.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<style type="text/css">
+			input[type='text'], select{
+				padding:9px;
+				/*margin-left: 38px;*/
+				width: 250px;
+			}
+			input[type='submit']{
+				padding: 10px;
+				bor
+			}
+			select{
+				/*margin-left: 112px;*/
+			}
+			legend{
+				font-weight: bolder;
+			}
+		</style>
+
+</head>
+<body>
+
+	<!--header section-->
+	<div id="header">
+		<div id="t1"></div>
+		<div >
+
+			<div id="head-inner">
+				<img src="images/mcb.png" id="logo" alt="logo" width="140px">
+				<div class="inline">
+					<ul>
+						<a href="index.html">
+							<li>Home</li><span class="b-right"></span>						
+						</a>
+						<a href="">
+							<li>Staff</li><span class="b-right"></span>
+						</a>
+						<a href="">
+							<li>Project</li><span class="b-right"></span>
+						</a>
+						<a href="">
+							<li>About Us</li><span class="b-right"></span>
+						</a>
+						<a href="contact.html">
+							<li>Contact</li>
+						</a>
+					</ul>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	<!--End header section-->
+
+	<!--content section-->
+	<div id="content">
+		<div id="section1" style="padding: 100px; background: #eee; margin-bottom: 30px;">
+		<h2>Contact Us</h2><br>
+		<form>
+			<legend>Your Email</legend><input type="text" name="email" class="form-control"><br><br>
+			<select>
+				<option>---</option>
+				<option>Adverts</option>
+				<option>Enquiry</option>
+				<option>Correction</option>
+			</select><br><br>
+			<legend>Subject *</legend><br>
+<textarea rows="10" cols="50" ></textarea><br>
+<input type="submit" name="submit" value="Send">
+		</form>
+		</div>
+	</div>
+	<!--End content section-->
+	<br style="clear: left;"><br><br>
+	<!--Footer section-->
+	<footer id="footer">
+					<p class="col-lg-8 copy-right-grids" style="color:white !important;">© 2020 Conference. All Rights Reserved | Design by
+						<a href="https://cs.ibbu.edu.ng" target="_blank" style="color: #fff">Computer Science Department - IBBUL</a>
+					</p>
+						<ul class="list-unstyled">
+							<li>
+								<a href="#">Facebook</a>
+							</li>
+							<li class="mx-4">
+								<a href="#">Twitter</a>
+							</li>
+							<li>
+								<a href="#">Google Plus</a>
+							</li>
+						</ul>
+
+	</footer>
+	<!--End Footer section-->
+
+	<script>
+
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("head-inner");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+    //document.getElementById('ani').style.marginTop = '25vh';
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+</html>
